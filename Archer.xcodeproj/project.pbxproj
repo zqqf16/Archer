@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5155F5841E72A72B0029B24C /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155F5831E72A72B0029B24C /* ContentType.swift */; };
+		F4151A4A1E705C0500666FCC /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4151A491E705C0500666FCC /* WindowController.swift */; };
+		F4151A4C1E705ECC00666FCC /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4151A4B1E705ECC00666FCC /* Rule.swift */; };
+		F4151A4E1E706A9600666FCC /* RuleEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4151A4D1E706A9600666FCC /* RuleEditorViewController.swift */; };
+		F4867AE01E7057E6004205D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867ADF1E7057E6004205D0 /* AppDelegate.swift */; };
+		F4867AE21E7057E6004205D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867AE11E7057E6004205D0 /* ViewController.swift */; };
+		F4867AE41E7057E6004205D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4867AE31E7057E6004205D0 /* Assets.xcassets */; };
+		F4867AE71E7057E6004205D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4867AE51E7057E6004205D0 /* Main.storyboard */; };
+		F4867AF21E7057E6004205D0 /* ArcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867AF11E7057E6004205D0 /* ArcherTests.swift */; };
+		F4867AFD1E7057E6004205D0 /* ArcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867AFC1E7057E6004205D0 /* ArcherUITests.swift */; };
+		F4867B1E1E705814004205D0 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0B1E705814004205D0 /* DemoServer.swift */; };
+		F4867B1F1E705814004205D0 /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0C1E705814004205D0 /* Errno.swift */; };
+		F4867B201E705814004205D0 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0D1E705814004205D0 /* Files.swift */; };
+		F4867B211E705814004205D0 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0E1E705814004205D0 /* HttpParser.swift */; };
+		F4867B221E705814004205D0 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0F1E705814004205D0 /* HttpRequest.swift */; };
+		F4867B231E705814004205D0 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B101E705814004205D0 /* HttpResponse.swift */; };
+		F4867B241E705814004205D0 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B111E705814004205D0 /* HttpRouter.swift */; };
+		F4867B251E705814004205D0 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B121E705814004205D0 /* HttpServer.swift */; };
+		F4867B261E705814004205D0 /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B131E705814004205D0 /* HttpServerIO.swift */; };
+		F4867B271E705814004205D0 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B141E705814004205D0 /* Process.swift */; };
+		F4867B281E705814004205D0 /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B151E705814004205D0 /* Scopes.swift */; };
+		F4867B291E705814004205D0 /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B161E705814004205D0 /* Socket+File.swift */; };
+		F4867B2A1E705814004205D0 /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B171E705814004205D0 /* Socket+Server.swift */; };
+		F4867B2B1E705814004205D0 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B181E705814004205D0 /* Socket.swift */; };
+		F4867B2C1E705814004205D0 /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B191E705814004205D0 /* String+BASE64.swift */; };
+		F4867B2D1E705814004205D0 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B1A1E705814004205D0 /* String+File.swift */; };
+		F4867B2E1E705814004205D0 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B1B1E705814004205D0 /* String+Misc.swift */; };
+		F4867B2F1E705814004205D0 /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B1C1E705814004205D0 /* String+SHA1.swift */; };
+		F4867B301E705814004205D0 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B1D1E705814004205D0 /* WebSockets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4867AEE1E7057E6004205D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4867AD41E7057E6004205D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4867ADB1E7057E6004205D0;
+			remoteInfo = Archer;
+		};
+		F4867AF91E7057E6004205D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4867AD41E7057E6004205D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4867ADB1E7057E6004205D0;
+			remoteInfo = Archer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5155F5831E72A72B0029B24C /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ContentType.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4151A491E705C0500666FCC /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = WindowController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4151A4B1E705ECC00666FCC /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Rule.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4151A4D1E706A9600666FCC /* RuleEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RuleEditorViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4867ADC1E7057E6004205D0 /* Archer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4867ADF1E7057E6004205D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4867AE11E7057E6004205D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4867AE31E7057E6004205D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4867AE61E7057E6004205D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4867AE81E7057E6004205D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4867AED1E7057E6004205D0 /* ArcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4867AF11E7057E6004205D0 /* ArcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ArcherTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4867AF31E7057E6004205D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4867AF81E7057E6004205D0 /* ArcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4867AFC1E7057E6004205D0 /* ArcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ArcherUITests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F4867AFE1E7057E6004205D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4867B0B1E705814004205D0 /* DemoServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoServer.swift; sourceTree = "<group>"; };
+		F4867B0C1E705814004205D0 /* Errno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errno.swift; sourceTree = "<group>"; };
+		F4867B0D1E705814004205D0 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		F4867B0E1E705814004205D0 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		F4867B0F1E705814004205D0 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		F4867B101E705814004205D0 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		F4867B111E705814004205D0 /* HttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		F4867B121E705814004205D0 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		F4867B131E705814004205D0 /* HttpServerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServerIO.swift; sourceTree = "<group>"; };
+		F4867B141E705814004205D0 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		F4867B151E705814004205D0 /* Scopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scopes.swift; sourceTree = "<group>"; };
+		F4867B161E705814004205D0 /* Socket+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+File.swift"; sourceTree = "<group>"; };
+		F4867B171E705814004205D0 /* Socket+Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+Server.swift"; sourceTree = "<group>"; };
+		F4867B181E705814004205D0 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		F4867B191E705814004205D0 /* String+BASE64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+BASE64.swift"; sourceTree = "<group>"; };
+		F4867B1A1E705814004205D0 /* String+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		F4867B1B1E705814004205D0 /* String+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		F4867B1C1E705814004205D0 /* String+SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SHA1.swift"; sourceTree = "<group>"; };
+		F4867B1D1E705814004205D0 /* WebSockets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSockets.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4867AD91E7057E6004205D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4867AEA1E7057E6004205D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4867AF51E7057E6004205D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4867AD31E7057E6004205D0 = {
+			isa = PBXGroup;
+			children = (
+				F4867B0A1E705814004205D0 /* swifter */,
+				F4867ADE1E7057E6004205D0 /* Archer */,
+				F4867AF01E7057E6004205D0 /* ArcherTests */,
+				F4867AFB1E7057E6004205D0 /* ArcherUITests */,
+				F4867ADD1E7057E6004205D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4867ADD1E7057E6004205D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4867ADC1E7057E6004205D0 /* Archer.app */,
+				F4867AED1E7057E6004205D0 /* ArcherTests.xctest */,
+				F4867AF81E7057E6004205D0 /* ArcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4867ADE1E7057E6004205D0 /* Archer */ = {
+			isa = PBXGroup;
+			children = (
+				F4867ADF1E7057E6004205D0 /* AppDelegate.swift */,
+				F4867AE11E7057E6004205D0 /* ViewController.swift */,
+				F4151A4D1E706A9600666FCC /* RuleEditorViewController.swift */,
+				F4151A491E705C0500666FCC /* WindowController.swift */,
+				F4867AE31E7057E6004205D0 /* Assets.xcassets */,
+				F4867AE51E7057E6004205D0 /* Main.storyboard */,
+				F4867AE81E7057E6004205D0 /* Info.plist */,
+				F4151A4B1E705ECC00666FCC /* Rule.swift */,
+				5155F5831E72A72B0029B24C /* ContentType.swift */,
+			);
+			path = Archer;
+			sourceTree = "<group>";
+		};
+		F4867AF01E7057E6004205D0 /* ArcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4867AF11E7057E6004205D0 /* ArcherTests.swift */,
+				F4867AF31E7057E6004205D0 /* Info.plist */,
+			);
+			path = ArcherTests;
+			sourceTree = "<group>";
+		};
+		F4867AFB1E7057E6004205D0 /* ArcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4867AFC1E7057E6004205D0 /* ArcherUITests.swift */,
+				F4867AFE1E7057E6004205D0 /* Info.plist */,
+			);
+			path = ArcherUITests;
+			sourceTree = "<group>";
+		};
+		F4867B0A1E705814004205D0 /* swifter */ = {
+			isa = PBXGroup;
+			children = (
+				F4867B0B1E705814004205D0 /* DemoServer.swift */,
+				F4867B0C1E705814004205D0 /* Errno.swift */,
+				F4867B0D1E705814004205D0 /* Files.swift */,
+				F4867B0E1E705814004205D0 /* HttpParser.swift */,
+				F4867B0F1E705814004205D0 /* HttpRequest.swift */,
+				F4867B101E705814004205D0 /* HttpResponse.swift */,
+				F4867B111E705814004205D0 /* HttpRouter.swift */,
+				F4867B121E705814004205D0 /* HttpServer.swift */,
+				F4867B131E705814004205D0 /* HttpServerIO.swift */,
+				F4867B141E705814004205D0 /* Process.swift */,
+				F4867B151E705814004205D0 /* Scopes.swift */,
+				F4867B161E705814004205D0 /* Socket+File.swift */,
+				F4867B171E705814004205D0 /* Socket+Server.swift */,
+				F4867B181E705814004205D0 /* Socket.swift */,
+				F4867B191E705814004205D0 /* String+BASE64.swift */,
+				F4867B1A1E705814004205D0 /* String+File.swift */,
+				F4867B1B1E705814004205D0 /* String+Misc.swift */,
+				F4867B1C1E705814004205D0 /* String+SHA1.swift */,
+				F4867B1D1E705814004205D0 /* WebSockets.swift */,
+			);
+			path = swifter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4867ADB1E7057E6004205D0 /* Archer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4867B011E7057E6004205D0 /* Build configuration list for PBXNativeTarget "Archer" */;
+			buildPhases = (
+				F4867AD81E7057E6004205D0 /* Sources */,
+				F4867AD91E7057E6004205D0 /* Frameworks */,
+				F4867ADA1E7057E6004205D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Archer;
+			productName = Archer;
+			productReference = F4867ADC1E7057E6004205D0 /* Archer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4867AEC1E7057E6004205D0 /* ArcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4867B041E7057E6004205D0 /* Build configuration list for PBXNativeTarget "ArcherTests" */;
+			buildPhases = (
+				F4867AE91E7057E6004205D0 /* Sources */,
+				F4867AEA1E7057E6004205D0 /* Frameworks */,
+				F4867AEB1E7057E6004205D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4867AEF1E7057E6004205D0 /* PBXTargetDependency */,
+			);
+			name = ArcherTests;
+			productName = ArcherTests;
+			productReference = F4867AED1E7057E6004205D0 /* ArcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4867AF71E7057E6004205D0 /* ArcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4867B071E7057E6004205D0 /* Build configuration list for PBXNativeTarget "ArcherUITests" */;
+			buildPhases = (
+				F4867AF41E7057E6004205D0 /* Sources */,
+				F4867AF51E7057E6004205D0 /* Frameworks */,
+				F4867AF61E7057E6004205D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4867AFA1E7057E6004205D0 /* PBXTargetDependency */,
+			);
+			name = ArcherUITests;
+			productName = ArcherUITests;
+			productReference = F4867AF81E7057E6004205D0 /* ArcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4867AD41E7057E6004205D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zorro;
+				TargetAttributes = {
+					F4867ADB1E7057E6004205D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F4867AEC1E7057E6004205D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4867ADB1E7057E6004205D0;
+					};
+					F4867AF71E7057E6004205D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4867ADB1E7057E6004205D0;
+					};
+				};
+			};
+			buildConfigurationList = F4867AD71E7057E6004205D0 /* Build configuration list for PBXProject "Archer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4867AD31E7057E6004205D0;
+			productRefGroup = F4867ADD1E7057E6004205D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4867ADB1E7057E6004205D0 /* Archer */,
+				F4867AEC1E7057E6004205D0 /* ArcherTests */,
+				F4867AF71E7057E6004205D0 /* ArcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4867ADA1E7057E6004205D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4867AE41E7057E6004205D0 /* Assets.xcassets in Resources */,
+				F4867AE71E7057E6004205D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4867AEB1E7057E6004205D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4867AF61E7057E6004205D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4867AD81E7057E6004205D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4867B2B1E705814004205D0 /* Socket.swift in Sources */,
+				F4867B291E705814004205D0 /* Socket+File.swift in Sources */,
+				F4867B1F1E705814004205D0 /* Errno.swift in Sources */,
+				F4867B2F1E705814004205D0 /* String+SHA1.swift in Sources */,
+				F4867AE21E7057E6004205D0 /* ViewController.swift in Sources */,
+				F4151A4C1E705ECC00666FCC /* Rule.swift in Sources */,
+				F4867B251E705814004205D0 /* HttpServer.swift in Sources */,
+				F4867B201E705814004205D0 /* Files.swift in Sources */,
+				F4151A4A1E705C0500666FCC /* WindowController.swift in Sources */,
+				F4867B1E1E705814004205D0 /* DemoServer.swift in Sources */,
+				F4867B231E705814004205D0 /* HttpResponse.swift in Sources */,
+				F4867B211E705814004205D0 /* HttpParser.swift in Sources */,
+				F4867B301E705814004205D0 /* WebSockets.swift in Sources */,
+				F4867B2A1E705814004205D0 /* Socket+Server.swift in Sources */,
+				F4867B221E705814004205D0 /* HttpRequest.swift in Sources */,
+				5155F5841E72A72B0029B24C /* ContentType.swift in Sources */,
+				F4151A4E1E706A9600666FCC /* RuleEditorViewController.swift in Sources */,
+				F4867B261E705814004205D0 /* HttpServerIO.swift in Sources */,
+				F4867B2D1E705814004205D0 /* String+File.swift in Sources */,
+				F4867AE01E7057E6004205D0 /* AppDelegate.swift in Sources */,
+				F4867B241E705814004205D0 /* HttpRouter.swift in Sources */,
+				F4867B271E705814004205D0 /* Process.swift in Sources */,
+				F4867B2C1E705814004205D0 /* String+BASE64.swift in Sources */,
+				F4867B281E705814004205D0 /* Scopes.swift in Sources */,
+				F4867B2E1E705814004205D0 /* String+Misc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4867AE91E7057E6004205D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4867AF21E7057E6004205D0 /* ArcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4867AF41E7057E6004205D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4867AFD1E7057E6004205D0 /* ArcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4867AEF1E7057E6004205D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4867ADB1E7057E6004205D0 /* Archer */;
+			targetProxy = F4867AEE1E7057E6004205D0 /* PBXContainerItemProxy */;
+		};
+		F4867AFA1E7057E6004205D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4867ADB1E7057E6004205D0 /* Archer */;
+			targetProxy = F4867AF91E7057E6004205D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4867AE51E7057E6004205D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4867AE61E7057E6004205D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4867AFF1E7057E6004205D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4867B001E7057E6004205D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F4867B021E7057E6004205D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Archer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = im.zorro.Archer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4867B031E7057E6004205D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Archer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = im.zorro.Archer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F4867B051E7057E6004205D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = im.zorro.ArcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Archer.app/Contents/MacOS/Archer";
+			};
+			name = Debug;
+		};
+		F4867B061E7057E6004205D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = im.zorro.ArcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Archer.app/Contents/MacOS/Archer";
+			};
+			name = Release;
+		};
+		F4867B081E7057E6004205D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = im.zorro.ArcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Archer;
+			};
+			name = Debug;
+		};
+		F4867B091E7057E6004205D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = im.zorro.ArcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Archer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4867AD71E7057E6004205D0 /* Build configuration list for PBXProject "Archer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4867AFF1E7057E6004205D0 /* Debug */,
+				F4867B001E7057E6004205D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4867B011E7057E6004205D0 /* Build configuration list for PBXNativeTarget "Archer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4867B021E7057E6004205D0 /* Debug */,
+				F4867B031E7057E6004205D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4867B041E7057E6004205D0 /* Build configuration list for PBXNativeTarget "ArcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4867B051E7057E6004205D0 /* Debug */,
+				F4867B061E7057E6004205D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4867B071E7057E6004205D0 /* Build configuration list for PBXNativeTarget "ArcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4867B081E7057E6004205D0 /* Debug */,
+				F4867B091E7057E6004205D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4867AD41E7057E6004205D0 /* Project object */;
+}
